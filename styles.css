@@ -1,0 +1,212 @@
+*{ /*Universal Selector*/
+    box-sizing: border-box;
+}
+
+body{ /*Element or type selector*/
+    background-color: rgb(174, 174, 174);
+    /*functional value*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header{ /*Element or type selector*/
+    display: flex;
+    align-items: center;
+    width: 100%;    /*relative value */
+    height: 4.5rem; /*relative value */
+    /* height: 200px; /* fixed value */
+    background-color: white;
+    justify-content: space-around;
+
+    border: 1px solid rgb(246, 0, 0);
+    /*CSS shorthand*/
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+ul{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li:first-child{ /*Pseudo Class*/
+    font-weight: bold;
+}
+
+.logo{
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center; /*horizontal center*/
+    align-items: center; /*vertical center*/
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 100%;   
+    gap: 1rem;
+}
+
+form input{
+    width: 80%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(111, 110, 110);
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+form input::placeholder{
+    font-size: 1.5rem;
+}
+
+
+.key{
+    font-weight: bold;
+}
+
+.ordered list{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+}
+
+.ordere list h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+ol{
+    padding-left: 2rem;
+    margin: 0;
+}
+
+ol li{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.description h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+dl{
+    margin: 0;
+    padding: 0;
+}
+
+dt{
+    font-weight: bold;
+    display: inline;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+dd{
+    display: inline;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+dd::after{
+    content: "";
+    display: block;
+}
+
+.secc{
+    display: flex;
+    justify-content: space-between;    /*Equal space between items, first item at start, last at end.*/
+    width: 100%;
+    border-left: 1px solid #e0e0e0;
+}
+
+.table-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+.table-container h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;    /*collapse merges adjacent cell borders into a single border, instead of having separate borders.*/
+    border: 1px solid #e0e0e0;
+}
+
+thead{
+    background-color: #f5f5f5;
+}
+
+th{
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #e0e0e0;
+}
+
+tbody{
+    background-color: white;
+}
+
+tbody td{
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+tfoot{
+    background-color: #f5f5f5;
+}
+
+tfoot td{
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
