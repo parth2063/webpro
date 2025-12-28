@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* Internal Csss */
+        footer{
+            display: flex;
+            width: 100%;
+            background-color: white;
+            height: 4.5rem;
+            border: 1px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="logo"> S </div>
+            <h1>Sudip Mahat</h1>
+        </div>
+        <nav>   
+            <ul> <!--Unordered list-->
+                <li>Unordered List</li>
+                <li>Content 1</li>
+                <li>Content 2</li>
+                <li>Content 3</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <div style="display: flex; gap: 1rem;">
+        <section> 
+            <h2>Enter details:</h2>
+            <form >
+                <label for="name">Name</label>
+                <input type="text", id="name", placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email", id="email", placeholder="youremail@gmail.com">
+
+                <label for="password">Password</label>
+                <input type="password", id="password", placeholder="">
+            </form>
+        </section>
+
+    <aside >   <!--for sidebars-->
+        <div class="secc">
+            <div class="ordered list">
+                <h2>Ordered List</h2>
+                <ol type="i">
+                    <li>Content 1</li>
+                    <li>Content 2</li>
+                    <li>Content 3</li>
+                    <li>Content 4</li>
+                </ol>
+            </div>
+
+            <div class="description">
+                <h2>Description List</h2>
+                <dl>                           <!--description list: container for the description-->
+                    <dt class="key">Name:</dt> <!--description term: "key"-->
+                    <dd>Sudip Mahat</dd>    <!--description describe: "value" -->
+
+                    <dt class="key">Post:</dt>
+                    <dd>Student</dd>
+                </dl>
+            </div>
+        </div>
+    
+        <div class="table-container">
+            <h2>Table</h2>
+            <table>    <!--Table head: groups table header-->
+                <thead>
+                    <tr> <!--Table row-->
+                        <th>Header 1</th>  <!--Table header:defines header cell(bold,centre...) -->
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, cell 1</td>   <!--Table data-->
+                        <td>Row 1, cell 2</td>
+                    </tr>
+
+                    <tr> 
+                        <td>Row 2, cell 1</td>
+                        <td>Row 2, cell 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+       
+
+    </aside>
+        </div>
+
+        <section>
+           
+        </section>
+
+         <section>
+            <h1>Multimedia</h1>
+            <article>
+             <img src="./assets/sample_img.jpg" id="preview" width="500px">
+             <video src="./assets/sample_vid.mp4" id="vid" controls width="500px muted"></video>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
